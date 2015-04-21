@@ -11,9 +11,8 @@ class VotesController < ApplicationController
 
 		submission_exists = Submission.where(identifier: pick).length > 0
 
-		puts "SUBMISSION EXISTS: " + submission_exists
-
 		if submission_exists
+			puts "yes, submission exists!"
 			v = Vote.new
 			v.pick = pick
 			v.from = from
