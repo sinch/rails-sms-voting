@@ -1,5 +1,6 @@
 class VotesController < ApplicationController
 	def create
+		puts "VOTES#CREATE"
 		pick = params["message"].strip
 		from = params["from"]["endpoint"]
 
