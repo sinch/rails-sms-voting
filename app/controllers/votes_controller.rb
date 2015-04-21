@@ -3,22 +3,24 @@ class VotesController < ApplicationController
 
 	def create
 		puts "VOTES#CREATE"
-		pick = params["message"].strip.to_i
-		from = params["from"]["endpoint"]
+		params
+		render status: 200, nothing: true
+		# pick = params["message"].strip.to_i
+		# from = params["from"]["endpoint"]
 
-		puts "PICK: " + pick
-		puts "FROM: " + from
+		# puts "PICK: " + pick
+		# puts "FROM: " + from
 
-		submission_exists = Submissions.where(identifier: pick).length > 0
+		# submission_exists = Submissions.where(identifier: pick).length > 0
 
-		puts "SUBMISSION EXISTS: " + submission_exists
+		# puts "SUBMISSION EXISTS: " + submission_exists
 
-		if submission_exists
-			v = Vote.new
-			v.pick = pick
-			v.from = from
-			v.save
-		end
+		# if submission_exists
+		# 	v = Vote.new
+		# 	v.pick = pick
+		# 	v.from = from
+		# 	v.save
+		# end
 	end
 
 	def index
