@@ -3,8 +3,7 @@ class VotesController < ApplicationController
 
 	def create
 		puts "VOTES#CREATE"
-		params
-		render status: 200, nothing: true
+		render status: 200, json: params
 		# pick = params["message"].strip.to_i
 		# from = params["from"]["endpoint"]
 
