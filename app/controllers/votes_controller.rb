@@ -9,21 +9,16 @@ class VotesController < ApplicationController
 		puts "PICK: " + pick
 		puts "FROM: " + from
 
-		v = Vote.new
-		v.pick = 1
-		v.from = "12345645698"
-		v.save
+		submission_exists = Submissions.where(identifier: pick).length > 0
 
-		# submission_exists = Submissions.where(identifier: pick).length > 0
+		puts "SUBMISSION EXISTS: " + submission_exists
 
-		# puts "SUBMISSION EXISTS: " + submission_exists
-
-		# if submission_exists
-		# 	v = Vote.new
-		# 	v.pick = pick
-		# 	v.from = from
-		# 	v.save
-		# end
+		if submission_exists
+			v = Vote.new
+			v.pick = pick
+			v.from = from
+			v.save
+		end
 
 		render status: 200, nothing: true
 	end
