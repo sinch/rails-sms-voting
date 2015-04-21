@@ -1,0 +1,5 @@
+<%= link_to "New Submission", new_submission_path  %><br><br>
+
+<% @submissions.each do |s| %>
+	<%= s.identifier %> : <%= s.name %><br>
+<% end %>

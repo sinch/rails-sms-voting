@@ -1,0 +1,10 @@
+<%= simple_form_for(@submission) do |f| %>
+	<% @submission.errors.full_messages.each do |msg| %>
+		<p><%= msg %></p>
+	<% end %>
+
+	<%= f.input :identifier %>
+	<%= f.input :name %>
+
+	<%= f.submit %>
+<% end %>
