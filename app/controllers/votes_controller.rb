@@ -2,17 +2,12 @@ class VotesController < ApplicationController
 	skip_before_action :verify_authenticity_token, only: [:create]
 
 	def create
-		
-		pick = params["message"]#.strip.to_i
+		pick = params["message"]
 		from = params["from"]["endpoint"]
-
-		puts "PICK: " + pick
-		puts "FROM: " + from
 
 		submission_exists = Submission.where(identifier: pick).length > 0
 
 		if submission_exists
-			puts "yes, submission exists!"
 			v = Vote.new
 			v.pick = pick
 			v.from = from
