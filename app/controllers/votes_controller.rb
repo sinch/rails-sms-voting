@@ -1,7 +1,9 @@
 class VotesController < ApplicationController
+	skip_before_action :verify_authenticity_token, only: [:create]
+
 	def create
 		puts "VOTES#CREATE"
-		pick = params["message"].strip
+		pick = params["message"].strip.to_i
 		from = params["from"]["endpoint"]
 
 		puts "PICK: " + pick
