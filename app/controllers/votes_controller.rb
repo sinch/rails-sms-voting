@@ -3,7 +3,12 @@ class VotesController < ApplicationController
 		pick = params["message"].strip
 		from = params["from"]["endpoint"]
 
-		submission_exists = Submissions.where(identifier: pick).length
+		puts "PICK: " + pick
+		puts "FROM: " + from
+
+		submission_exists = Submissions.where(identifier: pick).length > 0
+
+		puts "SUBMISSION EXISTS: " + submission_exists
 
 		if submission_exists
 			v = Vote.new
