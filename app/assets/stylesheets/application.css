@@ -14,7 +14,7 @@
  *= require_self
  */
 
-.ct-chart .ct-label.ct-horizontal {
+.ct-chart .ct-label.ct-horizontal, .ct-chart .ct-label.ct-vertical {
 	font-size: 30px;
 	text-align: center;
 }

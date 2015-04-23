@@ -1,0 +1,682 @@
+/* line 90, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 0.75rem;
+  text-align: left;
+}
+/* line 94, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-label.ct-horizontal {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 0.75rem;
+  text-align: left;
+}
+/* line 98, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-label.ct-vertical {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 0.75rem;
+  text-align: right;
+}
+/* line 102, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-grid {
+  stroke: rgba(0, 0, 0, 0.2);
+  stroke-width: 1px;
+  stroke-dasharray: 2px;
+}
+/* line 106, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-point {
+  stroke-width: 10px;
+  stroke-linecap: round;
+}
+/* line 110, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-line {
+  fill: none;
+  stroke-width: 4px;
+}
+/* line 114, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-area {
+  stroke: none;
+  fill-opacity: 0.1;
+}
+/* line 118, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-bar {
+  fill: none;
+  stroke-width: 10px;
+}
+/* line 122, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-slice.ct-donut {
+  fill: none;
+  stroke-width: 60px;
+}
+/* line 80, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-a .ct-point, .ct-chart .ct-series.ct-series-a .ct-line, .ct-chart .ct-series.ct-series-a .ct-bar, .ct-chart .ct-series.ct-series-a .ct-slice.ct-donut {
+  stroke: #d70206;
+}
+/* line 84, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-a .ct-slice:not(.ct-donut), .ct-chart .ct-series.ct-series-a .ct-area {
+  fill: #d70206;
+}
+/* line 80, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-b .ct-point, .ct-chart .ct-series.ct-series-b .ct-line, .ct-chart .ct-series.ct-series-b .ct-bar, .ct-chart .ct-series.ct-series-b .ct-slice.ct-donut {
+  stroke: #f05b4f;
+}
+/* line 84, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-b .ct-slice:not(.ct-donut), .ct-chart .ct-series.ct-series-b .ct-area {
+  fill: #f05b4f;
+}
+/* line 80, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-c .ct-point, .ct-chart .ct-series.ct-series-c .ct-line, .ct-chart .ct-series.ct-series-c .ct-bar, .ct-chart .ct-series.ct-series-c .ct-slice.ct-donut {
+  stroke: #f4c63d;
+}
+/* line 84, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-c .ct-slice:not(.ct-donut), .ct-chart .ct-series.ct-series-c .ct-area {
+  fill: #f4c63d;
+}
+/* line 80, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-d .ct-point, .ct-chart .ct-series.ct-series-d .ct-line, .ct-chart .ct-series.ct-series-d .ct-bar, .ct-chart .ct-series.ct-series-d .ct-slice.ct-donut {
+  stroke: #d17905;
+}
+/* line 84, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-d .ct-slice:not(.ct-donut), .ct-chart .ct-series.ct-series-d .ct-area {
+  fill: #d17905;
+}
+/* line 80, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-e .ct-point, .ct-chart .ct-series.ct-series-e .ct-line, .ct-chart .ct-series.ct-series-e .ct-bar, .ct-chart .ct-series.ct-series-e .ct-slice.ct-donut {
+  stroke: #453d3f;
+}
+/* line 84, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-e .ct-slice:not(.ct-donut), .ct-chart .ct-series.ct-series-e .ct-area {
+  fill: #453d3f;
+}
+/* line 80, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-f .ct-point, .ct-chart .ct-series.ct-series-f .ct-line, .ct-chart .ct-series.ct-series-f .ct-bar, .ct-chart .ct-series.ct-series-f .ct-slice.ct-donut {
+  stroke: #59922b;
+}
+/* line 84, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-f .ct-slice:not(.ct-donut), .ct-chart .ct-series.ct-series-f .ct-area {
+  fill: #59922b;
+}
+/* line 80, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-g .ct-point, .ct-chart .ct-series.ct-series-g .ct-line, .ct-chart .ct-series.ct-series-g .ct-bar, .ct-chart .ct-series.ct-series-g .ct-slice.ct-donut {
+  stroke: #0544d3;
+}
+/* line 84, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-g .ct-slice:not(.ct-donut), .ct-chart .ct-series.ct-series-g .ct-area {
+  fill: #0544d3;
+}
+/* line 80, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-h .ct-point, .ct-chart .ct-series.ct-series-h .ct-line, .ct-chart .ct-series.ct-series-h .ct-bar, .ct-chart .ct-series.ct-series-h .ct-slice.ct-donut {
+  stroke: #6b0392;
+}
+/* line 84, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-h .ct-slice:not(.ct-donut), .ct-chart .ct-series.ct-series-h .ct-area {
+  fill: #6b0392;
+}
+/* line 80, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-i .ct-point, .ct-chart .ct-series.ct-series-i .ct-line, .ct-chart .ct-series.ct-series-i .ct-bar, .ct-chart .ct-series.ct-series-i .ct-slice.ct-donut {
+  stroke: #f05b4f;
+}
+/* line 84, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-i .ct-slice:not(.ct-donut), .ct-chart .ct-series.ct-series-i .ct-area {
+  fill: #f05b4f;
+}
+/* line 80, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-j .ct-point, .ct-chart .ct-series.ct-series-j .ct-line, .ct-chart .ct-series.ct-series-j .ct-bar, .ct-chart .ct-series.ct-series-j .ct-slice.ct-donut {
+  stroke: #dda458;
+}
+/* line 84, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-j .ct-slice:not(.ct-donut), .ct-chart .ct-series.ct-series-j .ct-area {
+  fill: #dda458;
+}
+/* line 80, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-k .ct-point, .ct-chart .ct-series.ct-series-k .ct-line, .ct-chart .ct-series.ct-series-k .ct-bar, .ct-chart .ct-series.ct-series-k .ct-slice.ct-donut {
+  stroke: #eacf7d;
+}
+/* line 84, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-k .ct-slice:not(.ct-donut), .ct-chart .ct-series.ct-series-k .ct-area {
+  fill: #eacf7d;
+}
+/* line 80, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-l .ct-point, .ct-chart .ct-series.ct-series-l .ct-line, .ct-chart .ct-series.ct-series-l .ct-bar, .ct-chart .ct-series.ct-series-l .ct-slice.ct-donut {
+  stroke: #86797d;
+}
+/* line 84, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-l .ct-slice:not(.ct-donut), .ct-chart .ct-series.ct-series-l .ct-area {
+  fill: #86797d;
+}
+/* line 80, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-m .ct-point, .ct-chart .ct-series.ct-series-m .ct-line, .ct-chart .ct-series.ct-series-m .ct-bar, .ct-chart .ct-series.ct-series-m .ct-slice.ct-donut {
+  stroke: #b2c326;
+}
+/* line 84, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-m .ct-slice:not(.ct-donut), .ct-chart .ct-series.ct-series-m .ct-area {
+  fill: #b2c326;
+}
+/* line 80, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-n .ct-point, .ct-chart .ct-series.ct-series-n .ct-line, .ct-chart .ct-series.ct-series-n .ct-bar, .ct-chart .ct-series.ct-series-n .ct-slice.ct-donut {
+  stroke: #6188e2;
+}
+/* line 84, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-n .ct-slice:not(.ct-donut), .ct-chart .ct-series.ct-series-n .ct-area {
+  fill: #6188e2;
+}
+/* line 80, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-o .ct-point, .ct-chart .ct-series.ct-series-o .ct-line, .ct-chart .ct-series.ct-series-o .ct-bar, .ct-chart .ct-series.ct-series-o .ct-slice.ct-donut {
+  stroke: #a748ca;
+}
+/* line 84, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart .ct-series.ct-series-o .ct-slice:not(.ct-donut), .ct-chart .ct-series.ct-series-o .ct-area {
+  fill: #a748ca;
+}
+/* line 145, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-square {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+/* line 8, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-square:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 100%;
+}
+/* line 17, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-square:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 23, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-square > svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 145, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-minor-second {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+/* line 8, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-minor-second:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 93.75%;
+}
+/* line 17, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-minor-second:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 23, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-minor-second > svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 145, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-major-second {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+/* line 8, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-major-second:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 88.88889%;
+}
+/* line 17, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-major-second:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 23, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-major-second > svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 145, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-minor-third {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+/* line 8, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-minor-third:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 83.33333%;
+}
+/* line 17, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-minor-third:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 23, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-minor-third > svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 145, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-major-third {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+/* line 8, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-major-third:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 80%;
+}
+/* line 17, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-major-third:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 23, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-major-third > svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 145, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-perfect-fourth {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+/* line 8, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-perfect-fourth:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 75%;
+}
+/* line 17, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-perfect-fourth:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 23, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-perfect-fourth > svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 145, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-perfect-fifth {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+/* line 8, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-perfect-fifth:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 66.66667%;
+}
+/* line 17, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-perfect-fifth:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 23, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-perfect-fifth > svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 145, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-minor-sixth {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+/* line 8, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-minor-sixth:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 62.5%;
+}
+/* line 17, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-minor-sixth:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 23, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-minor-sixth > svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 145, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-golden-section {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+/* line 8, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-golden-section:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 61.8047%;
+}
+/* line 17, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-golden-section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 23, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-golden-section > svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 145, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-major-sixth {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+/* line 8, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-major-sixth:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 60%;
+}
+/* line 17, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-major-sixth:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 23, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-major-sixth > svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 145, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-minor-seventh {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+/* line 8, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-minor-seventh:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+/* line 17, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-minor-seventh:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 23, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-minor-seventh > svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 145, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-major-seventh {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+/* line 8, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-major-seventh:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 53.33333%;
+}
+/* line 17, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-major-seventh:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 23, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-major-seventh > svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 145, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-octave {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+/* line 8, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-octave:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 50%;
+}
+/* line 17, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-octave:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 23, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-octave > svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 145, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-major-tenth {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+/* line 8, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-major-tenth:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 40%;
+}
+/* line 17, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-major-tenth:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 23, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-major-tenth > svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 145, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-major-eleventh {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+/* line 8, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-major-eleventh:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 37.5%;
+}
+/* line 17, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-major-eleventh:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 23, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-major-eleventh > svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 145, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-major-twelfth {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+/* line 8, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-major-twelfth:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 33.33333%;
+}
+/* line 17, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-major-twelfth:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 23, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-major-twelfth > svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 145, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-double-octave {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+/* line 8, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-double-octave:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 25%;
+}
+/* line 17, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-double-octave:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 23, /Users/jordan/Dropbox/voting/app/assets/stylesheets/chartist.scss */
+.ct-chart.ct-double-octave > svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+.ct-chart .ct-label.ct-horizontal, .ct-chart .ct-label.ct-vertical {
+	font-size: 30px;
+	text-align: center;
+}
+
+.wrapper {
+	padding: 100px;
+}
