@@ -1,3 +1,21 @@
-<% @votes.each do |v| %>
-	<%= v %><br>
-<% end %>
+<head>
+	<%= javascript_include_tag 'chartist' %>
+</head>
+
+<div class="wrapper">
+	<div class="ct-chart ct-golden-section"></div>
+</div>
+
+<script>
+$(function() {
+	$.get('/votes', function(data) {
+		new Chartist.Bar('.ct-chart', data, {}).on('draw', function(drawData) {
+			if(drawData.type === 'bar') {
+				drawData.element.attr({
+				  	style: 'stroke-width: 150px; stroke: RGB(99,2,157);'
+				});
+			};
+		});
+	});
+});
+</script>

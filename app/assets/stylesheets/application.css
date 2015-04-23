@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+.ct-chart .ct-label.ct-horizontal {
+	font-size: 30px;
+	text-align: center;
+}
+
+.wrapper {
+	padding: 100px;
+}

@@ -14,10 +14,38 @@ class VotesController < ApplicationController
 			v.save
 		end
 
-		render status: 200, nothing: true
+		render nothing: true
 	end
 
 	def index
-		@votes = Vote.all
+	end
+
+	def votes
+		render json: data #{labels: ["Orange", "Banana", "Apple"], series: [[2, 4, 6]]}
+	end
+
+	private
+	def data
+		votes_counts = {}
+
+
+
+		Vote.all.each do |v|
+			submission = Submission.where(:identifier => v.pick).first.name
+			if votes_counts[submission]
+				votes_counts[submission] += 1
+			else 
+				votes_counts[submission] = 1
+			end
+		end
+
+		graph_format = {labels: [], series: [[]]}
+
+		votes_counts.each do |k, v|
+			graph_format[:labels] << k
+			graph_format[:series][0] << v
+		end
+
+		graph_format
 	end
 end
