@@ -14,11 +14,34 @@
  *= require_self
  */
 
+ @font-face {
+    font-family: "PF Din";
+    src: url(pfdintextcondpro-regular-webfont.woff);
+}
+
+body {
+	font-family: "PF Din";
+}
+
+
 .ct-chart .ct-label.ct-horizontal, .ct-chart .ct-label.ct-vertical {
 	font-size: 30px;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 .wrapper {
 	padding: 100px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 5em;
+	color: rgb(99,2,157);
+}
+
+#submissions {
+	text-align: center;
+	font-size: 3em;
+	line-height: 1.3;
 }

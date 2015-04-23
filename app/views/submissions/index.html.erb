@@ -1,5 +1,7 @@
 <h1>Text the app number to (415) 529-7288 to vote!</h1>
 
+<div id="submissions">
 <% @submissions.each do |s| %>
 	<%= s.identifier %> : <%= s.name %><br>
 <% end %>
+</div>
