@@ -32,7 +32,6 @@ body {
 }
 
 .ct-chart .ct-label.ct-horizontal, .ct-chart .ct-label.ct-vertical {
-	font-size: 30px;
 	text-align: center;
 	text-transform: uppercase;
 	color: rgb(99,99,99);
