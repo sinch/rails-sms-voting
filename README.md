@@ -22,7 +22,7 @@ In the next two sections, I'll go into details about handling the incoming SMS a
 6. Add the phone number that you just rented as "inbound number." At the time of writing this, you can't copy and paste the number. Instead, start typing the area code of the number, and click the number on the dropdown list. If it turned into a purple button like you see above, you did it right.
 7. Click the save button **twice!**
 
-Now, you'll want to set up http://www.where-is-your-app-hosted.com/vote to do something with the incoming SMS. The post data will look like this:
+Now, you'll want to set up http://www.where-is-your-app-hosted.com/vote to do something with the incoming SMS. The post data will look something like this:
     
     {
         "event": "incomingSms",
