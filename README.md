@@ -4,7 +4,7 @@ For an app pitch night we were hosting, I wanted an easy way for attendees to vo
 
 Because attendees only had a few minutes to vote and everyone was physically present, using SMS prevented people from submitting multiple votes without forcing anyone to sign up for an account. As the presentations happened, I entered each app's name into the system via a simple form. When it was time to vote, I put the list of submissions on the giant projector:
 
-![sms votoing submissions screen](images/submissions.png)
+![sms voting submissions screen](images/sms-submissions.png)
 
 Once the voting period ended, I navigated to the results page, which shows how many votes each app received.
 
