@@ -6,7 +6,7 @@ For an app pitch night we were hosting, I wanted an easy way for attendees to vo
 
 Once the voting period ended, I navigated to the results page, which shows how many votes each app received.
 
-![screenshot of results](images/results.png)
+![chartist results](images/results.png)
 
 In the next two sections, I'll dive into the details of handling the incoming SMS as a vote and displaying the results as a graph. The rest of the app is a basic Rails app. You can find the finished source code for my app on our GitHub at [github.com/sinch/rails-sms-voting](https://github.com/sinch/rails-sms-voting).
 
