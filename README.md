@@ -1,8 +1,8 @@
 #Build an SMS Voting System With Rails, Sinch and Chartist
 
-For an app pitch night we were hosting, I wanted an easy way for attendees to vote on their favorite app. I settled on a web app that displays a list of submissions with a corresponding "app number," which attendees can then text to a phone number to place their vote. Because attendees only had a few minutes to vote and everyone was physically present, using SMS prevented people from submitting multiple votes without forcing anyone to sign up for an account. As the presentations happened, I entered each app's name into the system via a simple form. When it was time to vote, I put the list of submissions on the giant projector:
+For an app pitch night we were hosting, I wanted an easy way for attendees to vote on their favorite app. I settled on building an SMS voting system that displays a list of submissions with a corresponding "app number," which attendees can then text to a phone number to place their vote. Because attendees only had a few minutes to vote and everyone was physically present, using SMS prevented people from submitting multiple votes without forcing anyone to sign up for an account. As the presentations happened, I entered each app's name into the system via a simple form. When it was time to vote, I put the list of submissions on the giant projector:
 
-![screenshot of submissions page](images/submissions.png)
+![sms votoing submissions screen](images/submissions.png)
 
 Once the voting period ended, I navigated to the results page, which shows how many votes each app received.
 
@@ -22,7 +22,7 @@ In the next two sections, I'll dive into the details of handling the incoming SM
 6. Add the phone number that you just rented as "inbound number." At the time of writing this, you can't copy and paste the number. Instead, start typing the area code of the number and click the number on the drop-down list. If it turned into a purple button like you see above, you did it right.
 7. Click the save button **twice!**
 
-Now, you'll want to set up http://www.where-is-your-app-hosted.com/vote to do something with the incoming SMS. The post data will look something like this:
+Now, you'll want to set up `http://www.where-is-your-app-hosted.com/vote` to do something with the incoming SMS. The post data will look something like this:
     
     {
         "event": "incomingSms",
@@ -97,4 +97,4 @@ And here's what mine looks like to get data from my backend, only display the y-
     	});
     });
     
-For more customization options, check out [Chartist.js docs](http://gionkunz.github.io/chartist-js/api-documentation.html).   
+So there you go. How to build your own SMS voting system using Rails and Chartist. For more customization options, check out [Chartist.js docs](http://gionkunz.github.io/chartist-js/api-documentation.html).   
